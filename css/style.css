@@ -1,3 +1,44 @@
+/* Para dispositivos móviles con un ancho máximo de 767px */
+@media screen and (max-width: 767px) {
+    header {
+        padding: 10px; /* Reducir el padding del encabezado */
+    }
+    #logo {
+        width: 30px; /* Reducir el tamaño del logo */
+    }
+    main {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        padding: 10px; /* Reducir el padding del contenido principal */
+    }
+    #intro, #carousel, #contacto {
+        margin: 10px 0; /* Reducir el margen de los elementos principales */
+    }
+    .carousel-container {
+        height: 200px; /* Reducir la altura del contenedor del carrusel */
+    }
+}
+
+/* Para tabletas y dispositivos con una resolución mínima de 768px */
+@media screen and (min-width: 768px) {
+    header {
+        padding: 15px; /* Ajustar el padding del encabezado */
+    }
+    #logo {
+        width: 40px; /* Ajustar el tamaño del logo */
+    }
+    main {
+        padding: 15px; /* Ajustar el padding del contenido principal */
+    }
+    .carousel-container {
+        height: 250px; /* Ajustar la altura del contenedor del carrusel */
+    }
+}
+
+/* Estilos generales */
+/* Puedes mantener los estilos generales aquí */
+
+
+
 /* style.css */
 
 body {
