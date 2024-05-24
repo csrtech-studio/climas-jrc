@@ -8,9 +8,32 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+
+
 document.getElementById('infoForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    alert('Formulario enviado. Nos pondremos en contacto contigo pronto.');
+
+    // Recoge los datos del formulario
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+    // Define el objeto de parámetros para EmailJS
+    var templateParams = {
+        nombre: nombre,
+        email: email,
+        mensaje: mensaje
+    };
+
+    // Envía el correo usando EmailJS
+    emailjs.send('Tservice_12g7xgl', 'template_133diss', templateParams)
+        .then(function(response) {
+            console.log('Correo enviado con éxito', response.status, response.text);
+            alert('Mensaje enviado con éxito. No pondremos en contacto con usted a la Brevedad');
+        }, function(error) {
+            console.error('Error al enviar el correo', error);
+            alert('Hubo un problema al enviar el mensaje. Por favor, intenta nuevamente.');
+        });
 });
 
 
