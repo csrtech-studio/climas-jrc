@@ -15,13 +15,13 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
 
     // Recoge los datos del formulario
     var nombre = document.getElementById('nombre').value;
-    var email = document.getElementById('email').value;
+    var telefono = document.getElementById('telefono').value;
     var mensaje = document.getElementById('mensaje').value;
 
     // Define el objeto de parámetros para EmailJS
     var templateParams = {
         nombre: nombre,
-        email: email,
+        telefono: telefono,
         mensaje: mensaje
     };
 
