@@ -8,7 +8,6 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.carousel img');
     let currentIndex = 0;
