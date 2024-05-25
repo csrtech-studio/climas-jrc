@@ -1,7 +1,8 @@
 
-    // Inicializa EmailJS
+
+// Inicializa EmailJS con Public Key
 (function(){
-    emailjs.init("GIigsFAhMFrRS_anK"); // Reemplaza "YOUR_USER_ID" con tu userID de EmailJS
+    emailjs.init("GIigsFAhMFrRS_anK"); // Reemplaza "YOUR_PUBLIC_KEY" con tu clave pública de EmailJS
 })();
 
 document.getElementById('infoForm').addEventListener('submit', function(event) {
@@ -14,7 +15,7 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
     const mensaje = document.getElementById('mensaje').value;
     
     // Envía el formulario a través de EmailJS
-    emailjs.send('Tservice_12g7xgl', 'template_133diss', {
+    emailjs.send("service_12g7xgl", "template_133diss", {
         nombre: nombre,
         telefono: telefono,
         servicio: servicio,
@@ -24,8 +25,7 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
         console.log('SUCCESS!', response.status, response.text);
         alert('Formulario enviado con éxito!');
     }, function(error) {
-        console.log('FAILED...', error);
+        console.error('FAILED...', error); // Usa console.error para errores
         alert('Error al enviar el formulario. Por favor, inténtelo de nuevo.');
     });
 });
-
