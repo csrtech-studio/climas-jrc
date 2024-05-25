@@ -28,4 +28,5 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
         console.error('FAILED...', error); // Usa console.error para errores
         alert('Error al enviar el formulario. Por favor, inténtelo de nuevo.');
     });
+    
 });
