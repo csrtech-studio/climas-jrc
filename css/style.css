@@ -34,23 +34,18 @@ h1 {
 main {
     padding: 20px;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
     justify-content: space-between;
     margin-top: 80px; /* Margen superior para evitar que el encabezado tape el contenido */
-    width: 100%; /* Asegura que el contenedor principal ocupe todo el ancho */
-    box-sizing: border-box; /* Incluye padding y border en el ancho y alto */
 }
 
 #intro {
     text-align: center;
     flex: 1;
     margin-right: 20px;
-    min-width: 300px; /* Asegura un tamaño mínimo */
 }
 
 #carousel {
     flex: 1;
-    min-width: 300px; /* Asegura un tamaño mínimo */
 }
 
 .carousel-container {
@@ -79,7 +74,6 @@ main {
     margin: 20px;
     max-width: 600px;
     flex: 1;
-    min-width: 300px; /* Asegura un tamaño mínimo */
 }
 
 form {
