@@ -20,7 +20,7 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
     })
     .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
-        alert('Formulario enviado con éxito!');
+        alert('Gracias por enviar sus datos! en un momento mas nos pondremos en contacto!');
         document.getElementById('infoForm').reset(); // Resetea el formulario
     }, function(error) {
         console.error('FAILED...', error);
