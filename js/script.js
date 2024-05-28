@@ -1,6 +1,6 @@
 // Inicializa EmailJS con Public Key
-(function(){
-    emailjs.init("GIigsFAhMFrRS_anK"); // Reemplaza "1Krai8GWhxZXbmunXrEj6" con tu clave pública de EmailJS
+(function() {
+    emailjs.init("GIigsFAhMFrRS_anK"); // Reemplaza "GIigsFAhMFrRS_anK" con tu clave pública de EmailJS
 })();
 
 document.getElementById('infoForm').addEventListener('submit', function(event) {
