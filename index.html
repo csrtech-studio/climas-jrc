@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="manifest.json">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <title>Climas JRC</title>
 </head>
 <body>
@@ -41,28 +41,27 @@
         <hr>
         <section id="contacto">
             <h2>Solicita Información</h2>
-<form id="infoForm">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
-    
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" required>
-    
-    <label for="servicio">Servicio requerido:</label>
-    <select id="servicio" name="servicio" required>
-        <option value="">Seleccione</option>
-        <option value="instalacion">Instalación</option>
-        <option value="mantenimiento">Mantenimiento</option>
-        <option value="reparacion">Reparación</option>
-        <option value="otro">Otro</option>
-    </select>
-    
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" required></textarea>
-    
-    <button type="submit">Enviar</button>
-</form>
-   
+            <form id="infoForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="servicio">Servicio requerido:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Seleccione</option>
+                    <option value="instalacion">Instalación</option>
+                    <option value="mantenimiento">Mantenimiento</option>
+                    <option value="reparacion">Reparación</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
@@ -75,8 +74,8 @@
         </div>
     </footer>
     
-    <script src="script.js"></script> 
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/email.js"></script>
     <script src="js/app.js"></script>
-    
 </body>
 </html>
