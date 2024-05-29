@@ -112,16 +112,9 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-.footer-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.footer-section {
-    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Icon styles */
@@ -152,9 +145,6 @@ footer {
     }
     .carousel-container {
         height: 200px; /* Reducir la altura del contenedor del carrusel */
-    }
-    footer {
-        padding: 10px;
     }
 }
 
